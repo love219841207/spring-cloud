@@ -1,0 +1,29 @@
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false
+# springadmin 在线查看log为logfile必须配置一下path
+logging:
+  path: /usr/local
+feign.hystrix.enabled: true
+spring:
+  application:
+    name: home
+server:
+  port: 8082
+eureka:
+  instance: 
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30 
+    metadata-map:
+      management:
+        port: ${server.port}
+  client:
+    registry-fetch-interval-seconds: 5
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://peer1:7761/eureka/,http://peer2:8761/eureka/,http://peer3:9761/eureka/
+management:
+  security:
+    enabled: false
