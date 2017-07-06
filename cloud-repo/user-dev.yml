@@ -18,8 +18,6 @@ eureka:
 management.security.enabled: false 
 
 spring:
-  application:
-    name: biz
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://mysql:3306/food?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&rewriteBatchedStatements=TRUE&useSSL=false
