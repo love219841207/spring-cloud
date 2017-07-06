@@ -3,7 +3,7 @@ endpoints:
     enabled: true
     sensitive: false
 server:
-  port: 8082
+  port: 8081
 eureka:
   instance: 
     lease-renewal-interval-in-seconds: 10
@@ -16,7 +16,6 @@ eureka:
       defaultZone: http://peer1:7761/eureka/,http://peer2:8761/eureka/,http://peer3:9761/eureka/
 
 management.security.enabled: false 
-name: danna
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource

@@ -4,8 +4,10 @@ spring:
   cloud:
     config:
       profile: dev
-      label: master
       uri: http://localhost:8888
 management:
   security:
     enabled: false
+logging:
+  path: E:\
+  file: FILE

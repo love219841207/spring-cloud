@@ -12,6 +12,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableSwagger2
 @MapperScan(basePackages = "com.think.cloud.service.user.mapper")
+/**
+ * config 热部署server。port 连接池初始化无法热部署。采用bus太重。生产使用手动重启
+ * @author dongxu
+ *
+ */
 @RefreshScope
 public class ServiceUserApplication {
 	public static void main(String[] args) {
