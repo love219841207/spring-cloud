@@ -16,7 +16,7 @@ eureka:
       defaultZone: http://peer1:7761/eureka/,http://peer2:8761/eureka/,http://peer3:9761/eureka/
 
 management.security.enabled: false 
-name: dean
+name: danna
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
