@@ -13,13 +13,13 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	 <modules>
+	 <!-- <modules>
         <module>cloud-eureka</module>
         <module>cloud-home-service</module>
         <module>cloud-user-service</module>
         <module>cloud-web-admin</module>
         <module>spring-boot-starter-swagger2</module>
-    </modules>
+    </modules> -->
 
 	<name>root</name>
 	<url>http://maven.apache.org</url>
