@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/love219841207/spring-cloud.git
-          searchPaths: cloud-config-server
+          searchPaths: cloud-repo
 eureka:
   client:
     serviceUrl:
