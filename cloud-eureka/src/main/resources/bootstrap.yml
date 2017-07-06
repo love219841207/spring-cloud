@@ -4,3 +4,6 @@ security:
   user:
     name: admin
     password: love2magic
+logging:
+  path: E:\
+  file: FILE

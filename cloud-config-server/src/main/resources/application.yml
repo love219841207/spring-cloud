@@ -13,3 +13,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:7761/eureka/,http://peer2:8761/eureka/,http://peer3:9761/eureka/
+logging:
+  path: E:\
+  file: FILE
