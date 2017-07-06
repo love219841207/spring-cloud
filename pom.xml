@@ -13,13 +13,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	 <!-- <modules>
-        <module>cloud-eureka</module>
-        <module>cloud-home-service</module>
-        <module>cloud-user-service</module>
-        <module>cloud-web-admin</module>
-        <module>spring-boot-starter-swagger2</module>
-    </modules> -->
+	<!-- <modules> <module>cloud-eureka</module> <module>cloud-home-service</module> 
+		<module>cloud-user-service</module> <module>cloud-web-admin</module> <module>spring-boot-starter-swagger2</module> 
+		</modules> -->
 
 	<name>root</name>
 	<url>http://maven.apache.org</url>
@@ -31,6 +27,10 @@
 		<springfox-swagger2.version>2.6.1</springfox-swagger2.version>
 		<spring-boot-starter-swagger2.version>0.0.1-SNAPSHOT</spring-boot-starter-swagger2.version>
 		<spring-boot-admin.version>1.5.2</spring-boot-admin.version>
+		<com.alibaba.druid.version>1.0.29</com.alibaba.druid.version>
+		<mybatis-spring-boot-starter.version>1.2.0</mybatis-spring-boot-starter.version>
+		<mapper-spring-boot-starter.version>1.1.0</mapper-spring-boot-starter.version>
+		<pagehelper-spring-boot-starter.version>1.1.0</pagehelper-spring-boot-starter.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -89,6 +89,32 @@
 				<artifactId>spring-boot-starter-swagger2</artifactId>
 				<version>${spring-boot-starter-swagger2.version}</version>
 			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>${com.alibaba.druid.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>${mybatis-spring-boot-starter.version}</version>
+			</dependency>
+			<!--mapper -->
+			<dependency>
+				<groupId>tk.mybatis</groupId>
+				<artifactId>mapper-spring-boot-starter</artifactId>
+				<version>${mapper-spring-boot-starter.version}</version>
+			</dependency>
+			<!--pagehelper -->
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper-spring-boot-starter</artifactId>
+				<version>${pagehelper-spring-boot-starter.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
