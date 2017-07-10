@@ -1,10 +1,13 @@
 spring:
   application: 
     name: user
+  zipkin:
+    baseUrl: http://localhost:9411
+    enabled: true
   cloud:
     config:
       profile: dev
-      uri: http://localhost:8888
+      uri: http://config-server:8888
 management:
   security:
     enabled: false

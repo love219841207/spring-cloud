@@ -39,4 +39,6 @@ public class WebHomeApplication {
 	Retryer feignRetryer() {
 		return new Retryer.Default(100, SECONDS.toMillis(1), 1);
 	}
+	
+	
 }
