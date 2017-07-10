@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: sleuth-server
+  sleuth:
+    enabled: false
+server:
+  port: 9411
